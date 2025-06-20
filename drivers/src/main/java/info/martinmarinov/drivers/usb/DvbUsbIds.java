@@ -23,6 +23,7 @@ package info.martinmarinov.drivers.usb;
 @SuppressWarnings({"unused", "SpellCheckingInspection"})
 public class DvbUsbIds {
     /* Vendor IDs */
+    public static final int USB_PID_MYGICA_PT362 = 0x689a;
     public static final int USB_VID_ADSTECH = 0x06e1;
     public static final int USB_VID_AFATECH = 0x15a4;
     public static final int USB_VID_ALCOR_MICRO = 0x058f;
