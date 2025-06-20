@@ -23,7 +23,6 @@ package info.martinmarinov.drivers.usb;
 @SuppressWarnings({"unused", "SpellCheckingInspection"})
 public class DvbUsbIds {
     /* Vendor IDs */
-    public static final int USB_PID_MYGICA_PT362 = 0x689a;
     public static final int USB_VID_ADSTECH = 0x06e1;
     public static final int USB_VID_AFATECH = 0x15a4;
     public static final int USB_VID_ALCOR_MICRO = 0x058f;
@@ -396,6 +395,7 @@ public class DvbUsbIds {
     public static final int USB_PID_SONY_PLAYTV = 0x0003;
     public static final int USB_PID_MYGICA_D689 = 0xd811;
     public static final int USB_PID_MYGICA_T230 = 0xc688;
+    public static final int USB_PID_MYGICA_PT362 = 0x689a;
     public static final int USB_PID_GENIATECH_T230C = 0xc689;
     public static final int USB_PID_ELGATO_EYETV_DIVERSITY = 0x0011;
     public static final int USB_PID_ELGATO_EYETV_DTT = 0x0021;
