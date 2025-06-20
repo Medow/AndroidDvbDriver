@@ -32,9 +32,10 @@ import info.martinmarinov.drivers.usb.DvbUsbDevice;
 import static info.martinmarinov.drivers.tools.SetUtils.setOf;
 import static info.martinmarinov.drivers.usb.cxusb.MygicaT230.MYGICA_T230;
 import static info.martinmarinov.drivers.usb.cxusb.MygicaT230C.MYGICA_T230C;
+import static info.martinmarinov.drivers.usb.cxusb.MygicaPT362.MYGICA_PT362;
 
 public class CxUsbDvbDeviceCreator implements DvbUsbDevice.Creator {
-    private final static Set<DeviceFilter> CXUSB_DEVICES = setOf(MYGICA_T230, MYGICA_T230C);
+    private final static Set<DeviceFilter> CXUSB_DEVICES = setOf(MYGICA_T230, MYGICA_T230C, MYGICA_PT362);
 
     @Override
     public Set<DeviceFilter> getSupportedDevices() {
@@ -46,6 +47,10 @@ public class CxUsbDvbDeviceCreator implements DvbUsbDevice.Creator {
         if (MYGICA_T230C.matches(usbDevice)) {
 
             return new MygicaT230C(usbDevice, context);
+
+        } else if (MYGICA_PT362.matches(usbDevice)) {
+
+            return new MygicaPT362(usbDevice, context);
 
         } else {
 
